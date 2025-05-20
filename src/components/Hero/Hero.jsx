@@ -1,8 +1,10 @@
+// Home.jsx
 import React from "react";
 import "./Hero.css";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
+import profileImg from "../../assets/me.png"; // Import the image
 
 const Home = () => {
   return (
@@ -10,7 +12,8 @@ const Home = () => {
       <div className="home__container container grid">
         <div className="home__content grid">
           <Social />
-          <div className="home__img"></div>
+          <div className="home__img" style={{ backgroundImage: `url(${profileImg})` }}>
+          </div>
           <Data />
         </div>
         <ScrollDown />

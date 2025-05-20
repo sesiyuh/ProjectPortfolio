@@ -60,7 +60,7 @@
 }
 
 .home__img {
-  background: url(../../assets/me.png);
+  /* Remove the direct background URL reference */
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
