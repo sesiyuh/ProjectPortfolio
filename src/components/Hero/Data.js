@@ -1,5 +1,4 @@
 import React from "react";
-import hand from "../../assets/hand.png";
 
 const Data = () => {
   return (

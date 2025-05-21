@@ -1,7 +1,5 @@
 import React from "react";
 import "./About.css";
-import AboutImg from '../../assets/me.png';
-import Resume from "../../assets/Resume.pdf";
 import Info from "./Info.js";
 
 const About = () => {
@@ -10,7 +8,7 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
       <div className="about__container container grid">
-        <img src={AboutImg} alt="About Me" className="about__img" />
+        <img src={`${process.env.PUBLIC_URL}/assets/me.png`} alt="About Me" className="about__img" />
         <div className="about__data">
           <Info />
           <p className="about__description">
@@ -21,7 +19,7 @@ const About = () => {
             My main stack currently includes MongoDB, Express.js, React/Next.js,
             and Node.js, often enhanced with tools like Tailwind CSS.
           </p>
-          <a download="" href={Resume} className="button button--flex">
+          <a href={`${process.env.PUBLIC_URL}/assets/resume.pdf`} download className="button button--flex" >
             Download Resume
             <svg
               className="button__icon"

@@ -5,10 +5,6 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "./Testimonial.css";
 import { Pagination, Autoplay } from "swiper/modules";
-import t1 from "../../assets/t1.png";
-import t2 from "../../assets/t2.png";
-import t3 from "../../assets/t3.png";
-import t4 from "../../assets/t4.png";
 
 const testimonialData = [
   {
@@ -16,27 +12,27 @@ const testimonialData = [
     name: "Anonymous 1",
     description:
       "The service was exceptional, exceeding my expectations in every way.",
-    img: t4,
+    img: `${process.env.PUBLIC_URL}/assets/t4.png`,
   },
   {
     id: 2,
     name: "Anonymous 2",
     description:
       "Highly recommend this service to anyone seeking quality and excellence.",
-    img: t2,
+    img: `${process.env.PUBLIC_URL}/assets/t2.png`,
   },
   {
     id: 3,
     name: "Anonymous 3",
     description:
       "Received excellent support, always prompt and incredibly helpful.",
-    img: t1,
+    img: `${process.env.PUBLIC_URL}/assets/t1.png`,
   },
   {
     id: 4,
     name: "Anonymous 4",
     description: "Great attention to detail and overall quality. Thank you",
-    img: t3,
+    img: `${process.env.PUBLIC_URL}/assets/t3.png`,
   },
 ];
 
